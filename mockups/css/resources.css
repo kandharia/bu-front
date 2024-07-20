@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "NightZone";
+    src: url("../../fonts/NightZone.ttf")format('truetype');
+  }
+  
+@font-face {
+    font-family: "coolvetica";
+    src: url("../../fonts/coolvetica.otf")format('opentype');
+}
+
+body {
+    margin: 0;
+    font-family: 'Coolvetica';
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #68b436;
+    padding: 10px 20px;
+    height: 70px;
+}
+
+.navbar-brand .logo {
+    margin-left: 30px;
+    width:12.5vw;
+    height: auto;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.navbar-item {
+    align-items: center;
+    display: flex;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 27px;
+    padding: 13px;
+}
+
+.navbar-item a:hover {
+    background-color: #88d656;
+}
+
+.navbar-item.opportunities a {
+    text-decoration: none;
+    color: white;
+    font-size: 27px;
+    padding: 29px;
+}
+
+.navbar-signup img {
+    height: auto;
+    width: 7vw;
+}
