@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/dollar.css" />
+    <link rel="stylesheet" href="css/reset.css" /> -->
+    <link rel="stylesheet" href="css/resources.css" />
+  </head>
+  <body>
+    <!-- navbar list -->
+    <nav id="desktopbar" class="desktop">
+      <ul id="listbar" class="nav">
+        <!-- Homepage logo -->
+        <li class="nav-items">
+          <a href="./index.html">
+            <img
+              src="assets/homepage/logo_white.png"
+              alt="Resouces menu"
+              id="wlogo"
+              class="desktop"
+            />
+          </a>
+        </li>
+
+        <!-- What is resources button -->
+        <li class="nav-item">
+          <a href="#" style="text-align: center">What is <br />Resources?</a>
+        </li>
+
+        <!-- Education Programs button -->
+        <li class="nav-item" style="right: 100px">
+          <a href="#">Education <br />Programs</a>
+        </li>
+
+        <!-- Opportunities button -->
+        <li class="nav-item">
+          <a href="#">Opportunities</a>
+        </li>
+
+        <!-- Contests & Challenges button -->
+        <li class="nav-item">
+          <a href="#">Contests & <br />Challenges</a>
+        </li>
+
+        <!-- Sign up/in button -->
+        <li class="nav-item" style="right: -50px; position: absolute">
+          <a href="#">
+            <img
+              src="assets/homepage/btn_06-signup.png"
+              alt="Resouces menu"
+              class="bdbar desktop"
+            />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end of navbar list -->
+
+    <!-- background -->
+    <div class="landingPage">
+      <img
+        id="background"
+        src="assets/homepage/bg_desktop.png"
+        alt="background"
+      />
+      <img
+        id="lizard-img"
+        src="assets/resourcespage/lizard_glass.png"
+        alt="lizards"
+      />
+      <img
+        id="resources-button"
+        src="assets/menupage/02-logo-resources.png"
+        alt="resources button"
+      />
+
+      <!-- Triangle div tag -->
+      <div id="con-bg"></div>
+      <!-- End of Triangle div tag -->
+
+      <button
+        onclick="changeColor('intro')"
+        style="font-size: 25px"
+        class="tab"
+        id="intro-button">Intro</button>
+
+      <button
+        onclick="changeColor('edprogs')"
+        style="font-size: 25px"
+        class="tab"
+        id="education-programs-button">Education<br />Programs</button>
+
+      <button
+        onclick="changeColor('opps')"
+        style="font-size: 25px"
+        class="tab"
+        id="opportunities-button">Opportunities</button>
+
+      <button
+        onclick="changeColor('contests')"
+        style="font-size: 25px"
+        class="tab"
+        id="contests-and-challenges-button">Contests & <br />Challenges</button>
+    </div>
+    <!-- end of background -->
+   
+    <style>
+      /* .clicked {
+        background-color: orange;
+      }
+      .orange-box {
+        display: none;
+      }
+      .orange-box.active {
+        display: block;
+      } */
+    </style>
+
+    <div class="all-buttons">
+      <div class="buttons">
+        <div style="font-size: 29px;" id="edprogs" class="orange-box"><b>Education Programs</b><br><br>are not created equal. In general, we feel that the things that seperate the great from the good often have little to do with the school name or the degree earned.<br><br>We collect ones that:<br><br> You might not know about or have thought of have understandable information around what they are and what they cost help you figure out where you can use them when you're done helping you meet people who can help you with that and can stand alone based on the experiences and outcomes they offer.</div>
+        <div style="font-size: 29px;" id="opps" class="orange-box"><b>Skill-Building Opportunities</b><br><br>are not created equal. In general, we feel that the things that seperate the great from the good often have little to do with the school name or the degree earned.<br><br>We collect ones that:<br><br> You might not know about or have thought of have understandable information around what they are and what they cost help you figure out where you can use them when you're done helping you meet people who can help you with that and can stand alone based on the experiences and outcomes they offer.</div>
+        <div style="font-size: 29px;" id="contests" class="orange-box"><b>Funding Options</b><br><br>are probably the least understood and most underused resource of all.<br>We highlight ones that:<br>are a little more fun and flexibleare mostly need blind and possibly more usable for you allow you to showcase some great skill-sets may often be applied to a variety of <br>institutions make a great add to your portfolio to resume. <br><br>audio/video competitions<br>problem solving contests<br>creative projects<br>idea or real-life essay contests</div>
+        <div style="font-size: 29px;" id="intro" class="orange-box"><br><b>Resources are a bit like chocolate.</b><br><br>In theory, the more the better, <br>Put into practice, though, sometimes more can get in the way and doesn't always feel like 'better'.<br><br>We research and investigate each resource we select and feature -independently, unsolicited, and based on criteria tha reflects extraordinary value and opportunity.<br><br>Beacause whether it's chocolate, or something else that purports to enrich your life, we feel that you should be clear on the ingredients.</div>
+      </div>
+    </div>
+
+    <script>
+      function changeColor(cityName) {
+        var i;
+        var x = document.getElementsByClassName("orange-box");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(cityName).style.display = "block";
+      }
+    </script>
+  </body>
+</html>
