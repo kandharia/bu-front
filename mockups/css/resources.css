@@ -1,7 +1,7 @@
 @font-face {
-    font-family: "NightZone";
-    src: url("../../fonts/NightZone.ttf")format('truetype');
-  }
+    font-family: "corbel";
+    src: url("../../fonts/corbel.ttf")format('opentype');
+  }  
   
 @font-face {
     font-family: "coolvetica";
@@ -11,6 +11,7 @@
 body {
     margin: 0;
     font-family: 'Coolvetica';
+    overflow: hidden;
 }
 
 .navbar {
@@ -63,4 +64,179 @@ body {
 .navbar-signup img {
     height: auto;
     width: 7vw;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    height: calc(100vh - 70px);
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #008DD2;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    transition: width 0.5s ease;
+    font-family: 'Corbel';
+    font-size: 14px;
+}
+
+.sidebar:hover {
+    width: 75%;
+}
+
+.program-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.program-item {
+    margin: 2px 0;
+    cursor: pointer;
+    padding: 0px;
+    transition: padding 0.3s ease;
+}
+
+.program-item:hover {
+    color: white;
+    background-color: #EA0F81;
+    padding: 5px;
+}
+
+.program-item.active {
+    background-color: #EA0F81;
+    color: white;
+}
+
+.main-content {
+    width: 75%;
+    background: url('/mockups/assets/homepage/bg_desktop.png');
+    background-color: #EA0F81;
+    background: cover;
+    overflow-y: auto;
+    transition: width 0.5s ease;
+}
+
+.main-content.smaller {
+    width: 40%;
+}
+
+.program-details {
+    display: none;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 40px;
+    width: 630px;
+    height: 350px;
+    margin-top: 40px;
+    margin-left: 20px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.program-details.active {
+    display: block;
+}
+
+.favorites-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.favorites-btn img {
+    width: 103px;
+    height: 35px;
+}
+
+.sidebar:hover ~ .main-content {
+    width: 40%;
+}
+
+.sidebar:hover ~ .main-content .program-details {
+    width: 80%;
+}
+
+.lizard-image, .building-image {
+    position: absolute;
+    width: 10%;
+    height: auto;
+}
+
+.lizard-image {
+    position: absolute;
+    bottom: 370px;
+    right: 35px;
+    width: 9%;
+    height: auto;
+}
+
+.building-image {
+    position: absolute;
+    top: 300px;
+    right: 28px;
+    width: 10%;
+    height: auto;
+}
+
+.sidebar:hover ~ .lizard-image,
+.sidebar:hover ~ .building-image {
+    opacity: 0;
+}
+
+.program-details h3 {
+    margin-top: -4px;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: rgb(64, 64, 64);
+}
+
+.program-details h5 {
+    margin-top: -15px;
+    font-weight: lighter;
+    font-size: 14px;
+    color: rgb(64, 64, 64);
+}
+
+.program-details p {
+    margin: 5px 0;
+    margin-top: -5px;
+    color: rgb(64, 64, 64);
+    font-size: 14px;
+}
+
+.program-details p strong {
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(64, 64, 64);
+}
+
+.program-details a {
+    color: #000;
+    text-decoration: underline;
+    color: rgb(64, 64, 64);
+}
+
+.program-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: rgb(64, 64, 64);
+    font-size: 14px;
+}
+
+.program-details li {
+    margin-bottom: 5px;
+    color: rgb(64, 64, 64);
+    font-size: 14px;
 }
